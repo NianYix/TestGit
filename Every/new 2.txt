@@ -1,0 +1,67 @@
+[user]
+	name = hw_liuhao
+	email = liuhao@hellowd.net
+[credential]
+	helper = manager
+	
+	
+public static Tweener To(DOGetter<int> getter, DOSetter<int> setter, int endValue, float duration);
+public static Tweener To(DOSetter<float> setter, float startValue, float endValue, float duration);
+
+
+
+1：id为Parameter1的驿站升级到Parameter2级
+2：解锁Parameter1辆车
+3：大货车载量升到Parameter1级
+4：解锁id为Parameter1的驿站
+5：解锁id为Parameter1的城市
+6：快递中心的驿站id为Parameter1货架等级升到Parameter2
+7：快递中心解锁Parameter1个员工
+8：快递车载量等级升到Parameter1级
+9：id为Parameter1的驿站配送时间等级升到Parameter2级
+10: id为Parameter1的驿站解锁Parameter2个员工
+11: id为Parameter1的驿站升级到Parameter2级货架
+12: 拥有Parameter1个店长
+13: 拥有Parameter1个等级为Parameter2的店长
+15: 达到称号等级Parameter1
+16：修建Parameter1周边建筑
+
+17. 解锁餐厅xx食物
+18. 餐厅xx食物升至x级
+19. 升级餐厅供餐速度至x级
+20. 升级餐厅窗口数至x个
+21. 解锁加工厂第x号车间
+22. 升级加工厂加工时间为x级
+23. 解锁修理厂第x号车位
+
+
+
+        protected GameObject _prefabName;
+
+
+ if (_prefabName!=null)
+            {
+                Destroy(_prefabName);
+            }
+
+        public void SetPrefabName(string textName,Sprite sprite=null)
+        {
+            if (_prefabName==null)
+            {
+                _prefabName = GameObject.Instantiate(Resources.Load<GameObject>(PrefabPath.PlayerName));
+               
+            }
+            _prefabName.transform.GetComponentInChildren<MyText>().text = textName;
+
+        }
+
+        private void Update()
+        {
+            if (_prefabName!=null)
+            {
+                _prefabName.transform.position = transform.position + Vector3.up * 2.2f + Vector3.back * 0.5f;
+            }
+        }
+
+
+
