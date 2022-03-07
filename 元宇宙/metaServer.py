@@ -71,7 +71,9 @@ def onCloseConn(server, sock, ip):
     
 if __name__ == '__main__':
     hostname = socket.gethostname()
+    print(f'hostname:{hostname}');
     ip = socket.gethostbyname(hostname)
+    print(f'ip:{ip}');
     server = ServerSocket(ip, 6000, onReceiveMsg, onCreateConn, onCloseConn)
     thread = None
 

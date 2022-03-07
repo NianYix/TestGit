@@ -91,6 +91,7 @@ def self_main(path):
     
     
 if __name__ == '__main__':
-    entry.entry_win()
-    entry.get_filePath(self_main)
+    self_main('1')
+#     entry.entry_win()
+#     entry.get_filePath(self_main)
     
