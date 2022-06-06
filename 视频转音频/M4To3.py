@@ -34,5 +34,5 @@ if __name__ == '__main__':
 #     entry.get_file('mp4',get_fileName)
     _fileName=r'F:/Work/JerryStudy/GitPos/TestGit/视频转音频/mmm.flv'
     _filePath=r'F:/Work/JerryStudy/GitPos/TestGit/视频转音频'
-    print(extract(_fileName, _filePath,'wav'))
+    print(extract(_fileName, _filePath,'mp3'))
     

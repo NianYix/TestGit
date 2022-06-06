@@ -13,7 +13,7 @@
 
 import easyocr
 reader = easyocr.Reader(['ch_sim','en'])
-result = reader.readtext(r'C:\Users\Jerry\Desktop\bx\2021.12.20\sentence.jpg')
+result = reader.readtext(r'C:\Users\Jerry\Desktop\bx\2021.12.20\ttttttt.jpg')
 # print(result)
 for i in result:
     word = i[1]
