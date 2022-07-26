@@ -6,6 +6,7 @@ import PySimpleGUI as sg
 
 url = 'http://translate.google.cn/m?q=%s&tl=%s&sl=%s'
 
+# 翻译
 def translate(text, to_language="en", text_language="auto"):
     text = parse.quote(text)
     url1 = url % (text, to_language, text_language)
@@ -17,7 +18,18 @@ def translate(text, to_language="en", text_language="auto"):
     print(result)
     if (len(result) == 0):
         return ""
+    addToClipboard(result[0])
     return html.unescape(result[0])
+
+# 复制到剪切板
+def addToClipboard( string ):
+    from tkinter import Tk
+    r = Tk()
+    r.withdraw()
+    r.clipboard_clear()
+    r.clipboard_append(string)
+    r.update()
+    r.destroy()
 
 sg.theme('bluepurple') # 设置主题
 font = ("fangsong",12) # 字体仿宋，大小12
