@@ -34,8 +34,8 @@ def addToClipboard( string ):
 sg.theme('bluepurple') # 设置主题
 font = ("fangsong",12) # 字体仿宋，大小12
 menu = [["Help",["About","Item","Author"]]] # 菜单栏设置
-value = ['汉语','英语','日语','法语','俄语','自动'] # 语言选择（前端显示），默认只有6种，可以自己添加
-var = ['zh','en','ja','fr','ru','auto'] # 语言选择（后端执行时）
+value = ['汉语','英语','日语','法语','俄语','韩语','自动'] # 语言选择（前端显示），默认只有6种，可以自己添加
+var = ['zh','en','ja','fr','ru','ko','auto'] # 语言选择（后端执行时）
 dic = dict(zip(value,var)) # 语言字典配置
 layout = [[sg.Menu(menu, tearoff=False)],
           [sg.Text(text='Input',size=(26,1)),
