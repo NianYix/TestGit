@@ -1,1 +1,1 @@
-you-get -o 'F:\Work\JerryStudy\GitPos\TestGit\youget下载视频' 'https://www.bilibili.com/video/BV1fV411H7Vt'
+you-get -o F:\Work\JerryStudy\GitPos\TestGit\youget下载视频 https://www.bilibili.com/video/BV1fV411H7Vt

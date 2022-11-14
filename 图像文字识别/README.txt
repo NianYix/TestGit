@@ -4,3 +4,4 @@
 	https://raw.githubusercontent.com/tesseract-ocr/tessdata/master/chi_sim.traineddata
 3¡¢ÑµÁ·£º
 	https://blog.csdn.net/a10201516595/article/details/106989088/
+	https://www.zhihu.com/question/303305223
