@@ -1,0 +1,11 @@
+本插件主要解决，添加了shader，会导致不会被遮挡的问题。
+插件使用：
+1、图片1：
+	1、材质挂载到对应item的Image的Material上
+	2、脚本挂载到对应item上
+2、脚本的m_rectTrans，填入遮挡容器，即ScrollView
+	脚本里的变量m_canvas，根据项目的不同，需做适当修改，只需获取UI的根Canvas即可
+3、使用前后对比：图片2
+参考链接：
+1、https://blog.csdn.net/wangjiangrong/article/details/79483257
+2、https://blog.csdn.net/WPAPA/article/details/71242812?utm_source=blogxgwz2
